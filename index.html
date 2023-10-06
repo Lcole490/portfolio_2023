@@ -77,7 +77,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
               </div>
               <p class="mb-5" style="max-width: 500px;" >From startups to established Fortune 500 companies, I have worked with various technologies and teams to execute Engineering Solutions. I am an effective communicator and collaborator determined to provide the results you need.</p>
              
-              <div class="col-md-12 sub-but"><button class="btn btn-general btn-white" role="button">Download Resume</button></div>
+              <div class="col-md-12 sub-but"><a href="./Lavar_Cole_Software_Developer_2023.pdf" download="Lavar_Cole_Resume"><button class="btn btn-general btn-white" role="button">Download Resume</button></a></div>
               <p></p>
               <ul class="list-inline list-social-icons mb-0">
                   <li class="list-inline-item">
@@ -479,23 +479,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                   <img class="img-fluid" src="img/portfolio/beats.jpg" alt="">
               </a>
           </div>              
-          <div class="col-sm-4 portfolio-item filter backend">
-              <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
-                  <div class="caption-port">
-                      <div class="caption-port-content">
-                          <i class="fa fa-search-plus fa-3x"></i>
-                      </div>
-                  </div>
-                  <div class="tech-stack">MLB Player API
-                    <div>
-                      <i class="devicon-java-plain"></i>
-                      <i class="devicon-postgresql-plain"></i>
-                      <i class="devicon-spring-plain"></i>
-                    </div>
-                  </div>
-                  <img class="img-fluid" src="img/portfolio/p-1.jpg" alt="">
-              </a>
-          </div>
+          
           <div class="col-sm-4 portfolio-item filter fullstack">
               <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
                   <div class="caption-port">
@@ -550,19 +534,19 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                 <div class="heading-border-light"></div>
                 <p>Thanks for taking the time to visit my Portfolio Site. If you would like to communicate with me for a Job opportunity, networking, or references be sure to send a message using the form below:</p>
               </div>   
-              <div class="row con-form">
+              <form class="row con-form" >
                 <div class="col-md-12">
-                  <input type="text" name="full-name" placeholder="Full Name" class="form-control">
+                  <input type="text" name="full-name" placeholder="Full Name" class="form-control" id="name">
                 </div>
                 <div class="col-md-12">
-                  <input type="text" name="email" placeholder="Email Address" class="form-control">
+                  <input type="text" name="email" placeholder="Email Address" class="form-control" id="email">
                 </div>
                 <div class="col-md-12">
-                  <input type="text" name="subject" placeholder="Subject of Email" class="form-control">
+                  <input type="text" name="subject" placeholder="Subject of Email" class="form-control" id="subject">
                 </div>
-                <div class="col-md-12"><textarea name="" id=""></textarea></div>
-                <div class="col-md-12 sub-but"><button class="btn btn-general btn-white" role="button">Send</button></div>
-              </div>
+                <div class="col-md-12"><textarea name="" id="body"></textarea></div>
+                <div class="col-md-12 sub-but"><button class="btn btn-general btn-white" role="button" onclick ="sendEmail(); reset(); return false;">Send</button></div>
+              </form>
             </div>
             <div class="col-md-4 col-sm-12 mt-5"> 
               <div class="contact-cont2"> 
@@ -671,7 +655,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                         <div class="modal-body">
                             <div class="title-bar">
                               <div class="col-md-12">
-                                <h2 class="text-center">Our Project</h2>
+                                <h2 class="text-center">Company Portal App</h2>
                                 <div class="heading-border"></div>
                               </div>
                             </div>
@@ -680,22 +664,21 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                                 <img class="img-fluid img-centered" src="img/portfolio/company.jpg" alt="">
                               </div>
                               <div class="col-md-6">
-                                <p>Our new Project every processes had become fragmented; meaning quality and service were inconsistent. This lack of standardization was adversely impacting operating costs, productivity and customer satisfaction. For several years now Payfast has worked strategically with innovations as a means of developing new solutions, products and services. In line with this vision, Success was approached to find new payments solutions to offer Payfast customers on their website, including open invoice and partial payments options.</p>
+                                <p>The Company Portal App provides a way to organize or have a structured view of a company's workforce. There are two types of accounts: User and Admin. Users are limited to seeing what announcements the company gets and projects they are assigned to. Admin accounts have access to all company and team info for all users.</p>
                                 <ul class="list-inline item-details">
-                                    <li>Client:
-                                        <strong>
-                                          <a href="#">Techs Soft</a>
-                                        </strong>
+                                  <li> 
+                                    <a href="https://github.com/Lcole490/companyPortal" target="_blank"><button class="btn btn-general btn-white" type="button" > Link to Github</button></a>
+                                  </li>
+                                    <li>Environment:
+                                      <Strong>
+                                       Full-Stack
+                                      </Strong>
                                     </li>
-                                    <li>Date:
-                                        <strong>
-                                          <a href="#">April 2018</a>
-                                        </strong>
-                                    </li>
-                                    <li>Service:
-                                        <strong>
-                                          <a href="#">Web Development</a>
-                                        </strong>
+                                    <br>
+                                    <li>Technologies Used:
+                                       <Strong> 
+                                        Figma, HTML, CSS, TypeScript, Java, PostgreSQL, Angular, Postman
+                                      </Strong>
                                     </li>
                                 </ul>
                                 <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
@@ -734,8 +717,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                                 <p>This is a game that uses the Spotify API to source the question of Who the mystery singer is. The user is able to set the amount of song samples received and the number of multiple choices to choose from. They can also pick from any genre recognized by Spotify. </p>
                                 <ul class="list-inline item-details">
                                   <li> 
-                                    <button class="btn btn-general btn-white" type="button" > Link to App</button>
-                                    <button class="btn btn-general btn-white" type="button" > Link to Github</button>
+                                    <a href="https://github.com/Lcole490/Spotify_whos_who" target="_blank"><button class="btn btn-general btn-white" type="button" > Link to Github</button></a>
                                   </li>
                                     <li>Environment:
                                         <strong>
@@ -885,7 +867,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                                 <ul class="list-inline item-details">
                                   <li> 
                                     <!-- <button class="btn btn-general btn-white" type="button" > Link to App</button> -->
-                                    <button class="btn btn-general btn-white" type="button" > Link to Github</button>
+                                    <a href = "https://github.com/Lcole490/Twitter_Clone_API" target="_blank"><button class="btn btn-general btn-white" type="button" > Link to Github</button></a>
                                   </li>
                                     <li>Environment:
                                         <strong>
@@ -1022,7 +1004,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                         <div class="modal-body">
                             <div class="title-bar">
                               <div class="col-md-12">
-                                <h2 class="text-center">Our Project</h2>
+                                <h2 class="text-center">Beats By Javascript</h2>
                                 <div class="heading-border"></div>
                               </div>
                             </div>
@@ -1099,6 +1081,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 
         });
     </script> 
+
 </body>
 
 </html>
