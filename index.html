@@ -575,7 +575,9 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                 <div class="heading-border-light"></div>
                 <p>Thanks for taking the time to visit my Portfolio Site. If you would like to communicate with me for a Job opportunity, networking, or references be sure to send a message using the form below:</p>
               </div>   
-              <form class="row con-form" >
+              <form class="row con-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="c85940e3-d27b-4b18-935e-510181b596c1">
+                <input type="hidden" name="subject" value="New Portfolio Site Submission: ">
                 <div class="col-md-12">
                   <input type="text" name="full-name" placeholder="Full Name" class="form-control" id="name">
                 </div>
@@ -583,10 +585,13 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                   <input type="text" name="email" placeholder="Email Address" class="form-control" id="email">
                 </div>
                 <div class="col-md-12">
-                  <input type="text" name="subject" placeholder="Subject of Email" class="form-control" id="subject">
+                  <input type="text" name="subject" placeholder="Subject of Message" class="form-control" id="subject">
                 </div>
-                <div class="col-md-12"><textarea name="" id="body"></textarea></div>
-                <div class="col-md-12 sub-but"><button class="btn btn-general btn-white" role="button" onclick ="sendEmail(); reset(); return false;">Send</button></div>
+                <div class="col-md-12"><textarea name="message" placeholder="Enter Your Message Here..." id="body"></textarea></div>
+                 <!-- hCaptcha Spam Protection -->
+                  <div class="h-captcha" data-captcha="true"></div>
+                  <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <div class="col-md-12 sub-but"><button class="btn btn-general btn-white" type="submit" role="button" onclick ="sendEmail(); reset(); return false;">Send</button></div>
               </form>
             </div>
             <div class="col-md-4 col-sm-12 mt-5"> 
@@ -1122,7 +1127,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 
         });
     </script> 
-
+<script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 
 </html>
